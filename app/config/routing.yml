@@ -1,0 +1,2 @@
+create:
+    resource: "@CmfCreateBundle/Resources/config/routing/rest.xml"

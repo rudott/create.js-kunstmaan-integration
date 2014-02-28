@@ -1,0 +1,9 @@
+<type
+        xmlns:schema="http://schema.org/"
+        typeof="schema:Page"
+        >
+    <children>
+        <property property="schema:headline" identifier="title"/>
+        <property property="schema:text" identifier="body" />
+    </children>
+</type>
