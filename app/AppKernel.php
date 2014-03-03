@@ -20,6 +20,20 @@ class AppKernel extends Kernel
             new JMS\SerializerBundle\JMSSerializerBundle($this),
             new FOS\RestBundle\FOSRestBundle(),
             new Symfony\Cmf\Bundle\CreateBundle\CmfCreateBundle(),
+
+            // Kunstmaan bundles
+            new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
+            new JMS\AopBundle\JMSAopBundle(),
+            new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
+            new Liip\ImagineBundle\LiipImagineBundle(),
+            new FOS\UserBundle\FOSUserBundle(),
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+            new Kunstmaan\UtilitiesBundle\KunstmaanUtilitiesBundle(),
+            new Kunstmaan\MediaBundle\KunstmaanMediaBundle(),
+            new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
+//            new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
+            new Kunstmaan\AdminBundle\KunstmaanAdminBundle(),
+            new Kunstmaan\AdminListBundle\KunstmaanAdminListBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
