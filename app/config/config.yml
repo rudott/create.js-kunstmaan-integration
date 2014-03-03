@@ -66,8 +66,11 @@ swiftmailer:
     spool:     { type: memory }
 
 cmf_create:
+    auto_mapping: true
     security:
         role: ROLE_USER
+    map:
+        'http://rdfs.org/sioc/ns#Page': 'Acme\DemoBundle\Entity\Page'
 #        checker_service: ~
     object_mapper_service_id: acme.create.object_mapper
     persistence:

@@ -1,5 +1,5 @@
 <type
-        xmlns:schema="http://schema.org/"
+        xmlns:schema="http://rdfs.org/sioc/ns#"
         typeof="schema:Page"
         >
     <children>

@@ -38,10 +38,9 @@ class Page
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="date", type="datetimetz")
+     * @ORM\Column(name="date", type="datetimetz", nullable=true)
      */
     private $date;
-
 
     /**
      * Get id
