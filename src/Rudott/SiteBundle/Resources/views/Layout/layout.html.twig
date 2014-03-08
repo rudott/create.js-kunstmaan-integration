@@ -26,6 +26,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 
     <!-- css -->
+    {% include "CmfCreateBundle::includecssfiles.html.twig" %}
 
     <!-- js -->
 </head>
@@ -302,6 +303,10 @@
     </footer>
 {% endblock %}
 
+{% render(controller(
+"cmf_create.jsloader.controller:includeJSFilesAction",
+{'_locale': app.request.locale}
+)) %}
 {% if ga_code is defined %}
     <script src='/frontend/analytics.min.js?{{ assets_version() }}'></script>
     {{ google_analytics_initialize({'account_id': ga_code}) }}
