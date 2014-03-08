@@ -1,0 +1,7 @@
+parameters:
+#    rudott_site.example.class: Rudott\SiteBundle\Example
+
+services:
+#    rudott_site.example:
+#        class: %rudott_site.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

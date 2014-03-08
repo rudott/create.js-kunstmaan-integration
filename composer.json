@@ -30,12 +30,22 @@
         "kunstmaan/admin-bundle": "dev-master",
         "kunstmaan/adminlist-bundle": "dev-master",
         "kunstmaan/utilities-bundle": "dev-master",
-        "kunstmaan/media-bundle": "dev-master"
+        "kunstmaan/media-bundle": "dev-master",
+        "kunstmaan/generator-bundle": "dev-master",
+        "kunstmaan/pagepart-bundle": "dev-master",
+        "kunstmaan/translator-bundle": "dev-master",
+        "kunstmaan/search-bundle": "dev-master",
+        "liip/cache-control-bundle": "dev-master",
+        "kunstmaan/seo-bundle": "dev-master",
+        "doctrine/migrations": "1.0.*@dev",
+        "knplabs/knp-menu": "v2.0.0-alpha1",
+        "knplabs/knp-menu-bundle": "v2.0.0-alpha1",
+        "kunstmaan/node-bundle": "dev-master",
+        "fzaninotto/faker": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
             "Symfony\\Cmf\\Bundle\\CreateBundle\\Composer\\ScriptHandler::downloadCreateAndCkeditor",
-            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
@@ -43,7 +53,6 @@
         ],
         "post-update-cmd": [
             "Symfony\\Cmf\\Bundle\\CreateBundle\\Composer\\ScriptHandler::downloadCreateAndCkeditor",
-            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",

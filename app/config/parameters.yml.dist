@@ -13,3 +13,9 @@ parameters:
 
     locale:            en
     secret:            ThisTokenIsNotSoSecretChangeIt
+
+    requiredlocales:   nl|en
+    defaultlocale:     en
+    multilanguage:     true
+
+    websitetitle:      Rudott

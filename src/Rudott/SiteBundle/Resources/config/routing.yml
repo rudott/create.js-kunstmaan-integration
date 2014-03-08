@@ -1,0 +1,5 @@
+rudottsitebundle_default:
+    resource: "@RudottSiteBundle/Controller/DefaultController.php"
+    type:     annotation
+    prefix:   /
+

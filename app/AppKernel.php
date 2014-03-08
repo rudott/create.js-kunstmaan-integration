@@ -16,33 +16,48 @@ class AppKernel extends Kernel
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+            new JMS\AopBundle\JMSAopBundle(),
+            new JMS\DiExtraBundle\JMSDiExtraBundle($this),
+            new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
 
             new JMS\SerializerBundle\JMSSerializerBundle($this),
             new FOS\RestBundle\FOSRestBundle(),
             new Symfony\Cmf\Bundle\CreateBundle\CmfCreateBundle(),
-
-            // Kunstmaan bundles
-            new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
-            new JMS\AopBundle\JMSAopBundle(),
-            new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
-            new Liip\ImagineBundle\LiipImagineBundle(),
-            new FOS\UserBundle\FOSUserBundle(),
-            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
-            new Kunstmaan\UtilitiesBundle\KunstmaanUtilitiesBundle(),
-            new Kunstmaan\MediaBundle\KunstmaanMediaBundle(),
-            new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
-//            new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
-            new Kunstmaan\AdminBundle\KunstmaanAdminBundle(),
-            new Kunstmaan\AdminListBundle\KunstmaanAdminListBundle(),
-            new WhiteOctober\PagerfantaBundle\WhiteOctoberPagerfantaBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
-            $bundles[] = new Acme\DemoBundle\AcmeDemoBundle();
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
         }
+
+        // Site specific bundles
+        $bundles[] = new Rudott\SiteBundle\RudottSiteBundle();
+        $bundles[] = new Rudott\CreateBundle\RudottCreateBundle();
+
+        // Kunstmaan Bundles
+        $bundles[] = new Kunstmaan\UtilitiesBundle\KunstmaanUtilitiesBundle();
+        $bundles[] = new Kunstmaan\NodeBundle\KunstmaanNodeBundle();
+        $bundles[] = new Kunstmaan\SeoBundle\KunstmaanSeoBundle();
+        $bundles[] = new Kunstmaan\MediaBundle\KunstmaanMediaBundle();
+        $bundles[] = new Kunstmaan\AdminBundle\KunstmaanAdminBundle();
+        $bundles[] = new Kunstmaan\PagePartBundle\KunstmaanPagePartBundle();
+//        $bundles[] = new Kunstmaan\MediaPagePartBundle\KunstmaanMediaPagePartBundle();
+//        $bundles[] = new Kunstmaan\FormBundle\KunstmaanFormBundle();
+        $bundles[] = new Kunstmaan\AdminListBundle\KunstmaanAdminListBundle();
+        $bundles[] = new Kunstmaan\GeneratorBundle\KunstmaanGeneratorBundle();
+//        $bundles[] = new Kunstmaan\NewRelicBundle\KunstmaanNewRelicBundle();
+
+        $bundles[] = new Kunstmaan\TranslatorBundle\KunstmaanTranslatorBundle();
+        $bundles[] = new Symfony\Cmf\Bundle\RoutingBundle\CmfRoutingBundle();
+        $bundles[] = new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle();
+        $bundles[] = new Liip\ImagineBundle\LiipImagineBundle();
+        $bundles[] = new Knp\Bundle\GaufretteBundle\KnpGaufretteBundle();
+        $bundles[] = new FOS\UserBundle\FOSUserBundle();
+        $bundles[] = new Knp\Bundle\MenuBundle\KnpMenuBundle();
+        $bundles[] = new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle();
+        $bundles[] = new WhiteOctober\PagerfantaBundle\WhiteOctoberPagerfantaBundle();
+        $bundles[] = new Liip\CacheControlBundle\LiipCacheControlBundle();
 
         return $bundles;
     }
