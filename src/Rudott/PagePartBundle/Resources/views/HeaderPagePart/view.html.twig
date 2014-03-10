@@ -1,3 +1,7 @@
-<h{{resource.niv}} id="{{ resource.title|slugify }}">
-    {{resource.title}}
-</h{{resource.niv}}>
+{% createphp resource as="rdf" noautotag %}
+<div {{ createphp_attributes(rdf) }}>
+    <h{{resource.niv}} id="{{ resource.title|slugify }} {{ createphp_attributes( rdf.title ) }}>
+        {{ createphp_content( rdf.title ) }}
+    </h{{resource.niv}}>
+</div>
+{% endcreatephp %}

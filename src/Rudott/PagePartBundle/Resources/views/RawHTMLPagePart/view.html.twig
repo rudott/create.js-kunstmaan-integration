@@ -1,3 +1,7 @@
-<div class="rawhtml-pp">
-{{resource.content|raw}}
+{% createphp resource as="rdf" noautotag %}
+<div {{ createphp_attributes(rdf) }}>
+    <div class="rawhtml-pp"  {{ createphp_attributes( rdf.content ) }}>
+        {{ createphp_content( rdf.content|raw ) }}
+    </div>
 </div>
+{% endcreatephp %}

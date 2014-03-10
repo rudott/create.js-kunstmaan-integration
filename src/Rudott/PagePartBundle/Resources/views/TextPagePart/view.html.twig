@@ -1,10 +1,14 @@
-{% if pagepartref is defined %}
-<script>
-window.FileChosenCallback['{{ pagepartref.id }}'] = function(url, id) {
-    window.CKEDITOR.tools.callFunction(2, url);
-}
-</script>
-{% endif %}
-<div class="text-pp">
-{{resource.content|raw}}
+{% createphp resource as="rdf" noautotag %}
+<div {{ createphp_attributes(rdf) }}>
+    {% if pagepartref is defined %}
+    <script>
+    window.FileChosenCallback['{{ pagepartref.id }}'] = function(url, id) {
+        window.CKEDITOR.tools.callFunction(2, url);
+    }
+    </script>
+    {% endif %}
+    <div class="text-pp" {{ createphp_attributes( rdf.content ) }}>
+        {{ createphp_content( rdf.content|raw ) }}
+    </div>
 </div>
+{% endcreatephp %}

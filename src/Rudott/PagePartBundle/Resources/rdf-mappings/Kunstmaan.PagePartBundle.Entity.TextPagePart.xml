@@ -1,0 +1,8 @@
+<type
+        xmlns:schema="http://rdfs.org/sioc/ns#"
+        typeof="schema:TextPagePart"
+        >
+    <children>
+        <property property="schema:text" identifier="content" />
+    </children>
+</type>
