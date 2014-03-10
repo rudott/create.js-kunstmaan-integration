@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "d20a25b48706ba5cf316e9ab7b7fd51d",
+    "hash": "59d9789ab5fc16c7d65430c4c051c010",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -798,12 +798,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "5be755ad0f9e1e968249ef3cfd4ebbcb51d9f6a7"
+                "reference": "9933d3a05667c1f86c67749f16cc319978714e99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/5be755ad0f9e1e968249ef3cfd4ebbcb51d9f6a7",
-                "reference": "5be755ad0f9e1e968249ef3cfd4ebbcb51d9f6a7",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/9933d3a05667c1f86c67749f16cc319978714e99",
+                "reference": "9933d3a05667c1f86c67749f16cc319978714e99",
                 "shasum": ""
             },
             "require": {
@@ -836,7 +836,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2014-03-06 13:55:13"
+            "time": "2014-03-10 17:20:59"
         },
         {
             "name": "gedmo/doctrine-extensions",
@@ -2057,12 +2057,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Kunstmaan/KunstmaanGeneratorBundle.git",
-                "reference": "addf07e1501c0111004b4bdc6940d10542cd479d"
+                "reference": "a305d5042f510458bb64f2a0bf7632b57071c02e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Kunstmaan/KunstmaanGeneratorBundle/zipball/addf07e1501c0111004b4bdc6940d10542cd479d",
-                "reference": "addf07e1501c0111004b4bdc6940d10542cd479d",
+                "url": "https://api.github.com/repos/Kunstmaan/KunstmaanGeneratorBundle/zipball/a305d5042f510458bb64f2a0bf7632b57071c02e",
+                "reference": "a305d5042f510458bb64f2a0bf7632b57071c02e",
                 "shasum": ""
             },
             "require": {
@@ -2106,7 +2106,7 @@
                 "generator",
                 "kunstmaan"
             ],
-            "time": "2014-02-25 09:37:39"
+            "time": "2014-03-10 17:05:59"
         },
         {
             "name": "kunstmaan/media-bundle",
@@ -2262,6 +2262,52 @@
                 "pageparts"
             ],
             "time": "2014-01-21 19:28:58"
+        },
+        {
+            "name": "kunstmaan/search-bundle",
+            "version": "dev-master",
+            "target-dir": "Kunstmaan/SearchBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Kunstmaan/KunstmaanSearchBundle.git",
+                "reference": "cab3463e4e1be6718b1fff76bbbed5c4d995c945"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Kunstmaan/KunstmaanSearchBundle/zipball/cab3463e4e1be6718b1fff76bbbed5c4d995c945",
+                "reference": "cab3463e4e1be6718b1fff76bbbed5c4d995c945",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "sherlock/sherlock": "0.1.*",
+                "symfony/symfony": ">=2.3.0,<2.4.0"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Kunstmaan\\SearchBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kunstmaan Team",
+                    "email": "support@kunstmaan.be",
+                    "homepage": "http://www.kunstmaan.be/"
+                }
+            ],
+            "description": "The KunstmaanSearchBundle works with ElasticSearch and supports different search providers. The bundle currently supports Sherlock as a provider. Add your own objects to index using a tagged service which implements the SearchConfigurationInterface",
+            "homepage": "https://github.com/Kunstmaan/KunstmaanSearchBundle",
+            "keywords": [
+                "elasticsearch",
+                "kunstmaan",
+                "search"
+            ],
+            "time": "2014-01-04 11:29:17"
         },
         {
             "name": "kunstmaan/seo-bundle",
@@ -3060,6 +3106,55 @@
             "time": "2013-08-21 18:09:35"
         },
         {
+            "name": "sherlock/sherlock",
+            "version": "v0.1.16",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/polyfractal/sherlock.git",
+                "reference": "ca435579462949b0790e0f05977a0c6ccfd8c1e5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/polyfractal/sherlock/zipball/ca435579462949b0790e0f05977a0c6ccfd8c1e5",
+                "reference": "ca435579462949b0790e0f05977a0c6ccfd8c1e5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9",
+                "symfony/event-dispatcher": "~2.1"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "1.4.*",
+                "phpunit/phpunit": "3.7.*",
+                "squizlabs/php_codesniffer": "1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sherlock": "src/",
+                    "Sherlock/tests": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Zachary Tong",
+                    "homepage": "http://euphonious-intuition.com/"
+                }
+            ],
+            "description": "PHP Client for Elasticsearch",
+            "homepage": "https://sherlockphp.org",
+            "keywords": [
+                "client",
+                "elasticsearch",
+                "search"
+            ],
+            "time": "2013-10-26 20:01:15"
+        },
+        {
             "name": "stof/doctrine-extensions-bundle",
             "version": "dev-master",
             "target-dir": "Stof/DoctrineExtensionsBundle",
@@ -3179,12 +3274,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/CreateBundle.git",
-                "reference": "6291995c43d0b6957454f3478c60eb61ffaf0a49"
+                "reference": "13a545230d0c405a9884eec315fabc2bcbd201bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/CreateBundle/zipball/6291995c43d0b6957454f3478c60eb61ffaf0a49",
-                "reference": "6291995c43d0b6957454f3478c60eb61ffaf0a49",
+                "url": "https://api.github.com/repos/symfony-cmf/CreateBundle/zipball/13a545230d0c405a9884eec315fabc2bcbd201bb",
+                "reference": "13a545230d0c405a9884eec315fabc2bcbd201bb",
                 "shasum": ""
             },
             "require": {
@@ -3227,7 +3322,7 @@
                 }
             ],
             "description": "Symfony Bundle for createphp and create.js. The easiest way to make any site editable and have semantic annotations with RDFa.",
-            "time": "2014-02-28 14:52:50"
+            "time": "2014-03-09 21:31:30"
         },
         {
             "name": "symfony-cmf/routing",
@@ -3965,6 +4060,7 @@
         "kunstmaan/generator-bundle": 20,
         "kunstmaan/pagepart-bundle": 20,
         "kunstmaan/translator-bundle": 20,
+        "kunstmaan/search-bundle": 20,
         "liip/cache-control-bundle": 20,
         "kunstmaan/seo-bundle": 20,
         "doctrine/migrations": 20,
