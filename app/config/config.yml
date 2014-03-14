@@ -77,10 +77,11 @@ swiftmailer:
 
 cmf_create:
     auto_mapping: true
+    editor_base_path: /bundles/cmfcreate/vendor/ckeditor/
     security:
         role: ROLE_USER
     map:
-        'http://rdfs.org/sioc/ns#Page': 'Acme\DemoBundle\Entity\Page'
+#        'http://rdfs.org/sioc/ns#Page': 'Acme\DemoBundle\Entity\Page'
 #        checker_service: ~
     object_mapper_service_id: rudott.create.object_mapper
     persistence:

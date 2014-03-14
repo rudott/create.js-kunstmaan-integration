@@ -27,6 +27,11 @@
 
     <!-- css -->
     {% include "CmfCreateBundle::includecssfiles.html.twig" %}
+    {% block css %}
+        {% stylesheets '@RudottSiteBundle/Resources/public/css/*.css' %}
+        <link rel='stylesheet' href='{{ asset_url }}' type='text/css' />
+        {% endstylesheets %}
+    {% endblock %}
 
     <!-- js -->
 </head>

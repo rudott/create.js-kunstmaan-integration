@@ -37,11 +37,14 @@ URL to frontend
 
     http://......./en/
 
-PS, I disabled app_dev.php security for now, befor using this project on a
-live server enable the security again.
+PS,
+- The app_dev.php security is disabled for now, before using this project on a
+  live server enable the security again.
+- The SCSS files are removed from SiteBundle and only the css file is put in the
+  css folder (so no Grunt needed)
 
 Todo
 ---
-- Using CKEditor in Create.js from Kunstmaan
-- Using Kunstmaan media bundle
+- Using CKEditor in Create.js from Kunstmaan? Or pull request @ Kunstmaan for
+  updating the version to 4.1
 - Documentation for adding RDF-mapping
