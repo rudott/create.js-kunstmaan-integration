@@ -43,6 +43,22 @@ PS,
 - The SCSS files are removed from SiteBundle and only the css file is put in the
   css folder (so no Grunt needed)
 
+Screenshots
+------------
+
+### Start editing
+
+[![editing](https://github.com/rudott/create.js-kunstmaan-integration/raw/master/img/screenshot-1-th.jpg)](https://github.com/rudott/create.js-kunstmaan-integration/raw/master/img/screenshot-1.jpg)
+
+### Saving changes
+
+[![saving](https://github.com/rudott/create.js-kunstmaan-integration/raw/master/img/screenshot-2-th.jpg)](https://github.com/rudott/create.js-kunstmaan-integration/raw/master/img/screenshot-2.jpg)
+
+### Preview changes
+
+[![preview](https://github.com/rudott/create.js-kunstmaan-integration/raw/master/img/screenshot-3-th.jpg)](https://github.com/rudott/create.js-kunstmaan-integration/raw/master/img/screenshot-3.jpg)
+
+
 Todo
 ---
 - Using CKEditor in Create.js from Kunstmaan? Or pull request @ Kunstmaan for
