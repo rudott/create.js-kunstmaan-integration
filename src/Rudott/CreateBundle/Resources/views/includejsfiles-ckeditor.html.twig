@@ -1,13 +1,14 @@
 {% include "CmfCreateBundle::includejsfiles-create.html.twig" %}
 
 <script>
-    window.CKEDITOR_BASEPATH = '{{ cmfCreateEditorBasePath }}';
+    window.CKEDITOR_BASEPATH = '/bundles/kunstmaanadmin/js/ckeditor/'; {#{{ cmfCreateEditorBasePath }}#}
     var filebrowserBrowseUrl = '{{ path('KunstmaanNodeBundle_ckselecturl') }}'
     var filebrowserImageBrowseUrl = '{{ path('KunstmaanMediaBundle_chooser', {'type': 'image'}) }}'
     var filebrowserImageBrowseLinkUrl = '{{ path('KunstmaanMediaBundle_chooser', {'type': 'image'}) }}'
 </script>
+<script src="{{ asset('bundles/kunstmaanadmin/js/ckeditor/ckeditor.js') }}"></script>
+{#'@CmfCreateBundle/Resources/public/vendor/ckeditor/ckeditor.js'#}
 {% javascripts output="/js/ckeditor.js"
-    '@CmfCreateBundle/Resources/public/vendor/ckeditor/ckeditor.js'
     '@RudottCreateBundle/Resources/public/js/init-create-ckeditor.js'
     '@CmfCreateBundle/Resources/public/js/init-create-common.js'
 %}
