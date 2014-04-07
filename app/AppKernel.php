@@ -43,8 +43,8 @@ class AppKernel extends Kernel
         $bundles[] = new Kunstmaan\MediaBundle\KunstmaanMediaBundle();
         $bundles[] = new Kunstmaan\AdminBundle\KunstmaanAdminBundle();
         $bundles[] = new Kunstmaan\PagePartBundle\KunstmaanPagePartBundle();
-//        $bundles[] = new Kunstmaan\MediaPagePartBundle\KunstmaanMediaPagePartBundle();
-//        $bundles[] = new Kunstmaan\FormBundle\KunstmaanFormBundle();
+        $bundles[] = new Kunstmaan\MediaPagePartBundle\KunstmaanMediaPagePartBundle();
+        $bundles[] = new Kunstmaan\FormBundle\KunstmaanFormBundle();
         $bundles[] = new Kunstmaan\AdminListBundle\KunstmaanAdminListBundle();
         $bundles[] = new Kunstmaan\GeneratorBundle\KunstmaanGeneratorBundle();
 //        $bundles[] = new Kunstmaan\NewRelicBundle\KunstmaanNewRelicBundle();

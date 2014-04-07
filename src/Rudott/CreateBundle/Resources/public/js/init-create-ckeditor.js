@@ -49,3 +49,8 @@ jQuery(document).ready(function() {
 
     window.CKEDITOR.basePath = window.CKEDITOR_BASEPATH;
 });
+
+function handleOK()
+{
+    alert(4);
+}
